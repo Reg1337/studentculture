@@ -1,0 +1,386 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #1D3557;
+    padding: 20px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #F76C5E;
+}
+
+.social-icons a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #F76C5E;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../public/img/background-hero.JPG') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.cta-btn {
+    background-color: #F76C5E;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #e65c4e;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: white;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+}
+
+.feature i {
+    font-size: 3em;
+    color: #1D3557;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    color: #1D3557;
+}
+
+.feature p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Destinations Section */
+.destinations {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.destinations h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1D3557;
+}
+
+.destination-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Destination Card Hover Effect */
+.destination-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effects */
+}
+
+.destination-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #F76C5E;
+    transition: transform 0.3s ease; /* Add transition for image zoom on hover */
+}
+
+.destination-card:hover {
+    transform: translateY(-10px); /* Slightly lifts the card up */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+}
+
+.destination-card:hover img {
+    transform: scale(1.05); /* Zooms in the image slightly */
+}
+
+.destination-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.2em;
+    color: #1D3557;
+}
+
+.destination-card p {
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #1D3557;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.intro h1 {
+    font-size: 3em;
+    color: #1D3557;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Statistics Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.stat-item {
+    text-align: center;
+    width: 30%;
+}
+
+.stat-item i {
+    font-size: 2.5em;
+    color: #1D3557;
+}
+
+.stat-item h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #1D3557;
+}
+
+.stat-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Landmarks Section */
+/* Landmarks Section */
+.landmarks {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.landmarks h2 {
+    font-size: 2.5em;
+    color: #1D3557;
+    margin-bottom: 30px;
+}
+/* Updated Landmarks Section */
+/* General Landmark Styling */
+.landmark {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Image Styling */
+.landmark img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+/* Text Styling */
+.landmark-text {
+    width: 50%;
+    text-align: left;
+}
+
+/* Left-aligned Landmark */
+.landmark:not(.landmark-right) img {
+    margin-right: 20px; /* Space to the right of the image */
+}
+
+/* Right-aligned Landmark */
+.landmark-right img {
+    margin-left: 20px !important; /* Space to the left of the image */
+    margin-right: 0 !important; /* Remove right margin */
+}
+
+
+.landmark-right img {
+    margin-left: 20px; /* Space to the left of the image */
+    margin-right: 0; /* Remove right margin */
+}
+
+.landmark-text h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #1D3557;
+}
+
+.landmark-text p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+
+/* Food Section */
+/* Food Section */
+.food {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.food h2 {
+    font-size: 2.5em;
+    color: #1D3557;
+    margin-bottom: 30px;
+}
+
+.card {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    color: #1D3557;
+}
+
+.card p {
+    color: #666;
+}
+
+
+/* Traditions Section */
+.traditions {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.traditions h2 {
+    font-size: 2.5em;
+    color: #1D3557;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #1D3557;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+/* Slogan and logo styling */
+.logo {
+    text-align: center;
+}
+
+.site-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+}
+
+.slogan {
+    display: block;
+    font-size: 0.5em;
+    color: #F76C5E;
+    font-style: italic;
+    margin-top: -5px;
+}

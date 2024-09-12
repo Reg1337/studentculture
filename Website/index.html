@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentCulture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../Website/css/style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html" class="site-title">
+                    StudentCulture
+                    <span class="slogan">The Easy Way</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </nav>
+    </header>    
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Discover Cultures Through Student Eyes</h1>
+            <p>Your guide to exploring the world’s cultures, curated by students like you.</p>
+            <p class="tagline">Made by Students for Students</p> <!-- Added line -->
+            <a href="#discover-top-destinations" class="cta-btn">Get Started</a>
+        </div>
+    </section>
+    
+    <section class="features">
+        <div class="feature">
+            <i class="fas fa-map-marked-alt"></i>
+            <h3>Explore</h3>
+            <p>Discover student-friendly travel guides for every destination.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-users"></i>
+            <h3>Connect</h3>
+            <p>Meet like-minded students and share travel experiences.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-globe"></i>
+            <h3>Cultures</h3>
+            <p>Immerse yourself in the world’s diverse cultures and traditions.</p>
+        </div>
+    </section>
+
+    <section id="discover-top-destinations">
+        <!-- Your content here -->
+    </section>
+    
+    <section class="destinations">
+        <h2>Discover Top Destinations</h2>
+        <div class="destination-cards">
+            <div class="destination-card">
+                <a href="paris.html">
+                    <img src="public/img/destination_paris.jpg" alt="Paris, France">
+                    <h3>Paris, France</h3>
+                    <p>The City of Light, known for its art, fashion, and cuisine.</p>
+                </a>
+            </div>
+            <div class="destination-card">
+                <a href="tokyo.html">
+                    <img src="public/img/destination_tokyo.jpg" alt="Tokyo, Japan">
+                    <h3>Tokyo, Japan</h3>
+                    <p>Experience traditional Japanese culture and stunning temples.</p>
+                </a>
+            </div>
+            <div class="destination-card">
+                <a href="newyorkcity.html">
+                    <img src="public/img/destination_ny.jpg" alt="New York City, USA">
+                    <h3>New York City, USA</h3>
+                    <p>The city that never sleeps, with iconic landmarks and vibrant neighborhoods.</p>
+                </a>
+            </div>
+            <div class="destination-card">
+                <a href="marrakech.html">
+                    <img src="public/img/destination_marrakech.jpg" alt="Marrakech, Morocco">
+                    <h3>Marrakech, Morocco</h3>
+                    <p>A vibrant city, famous for its souks, palaces, and rich heritage.</p>
+                </a>
+            </div>
+            <div class="destination-card">
+                <a href="london.html">
+                    <img src="public/img/destination_londres.jpg" alt="London, England">
+                    <h3>London, England</h3>
+                    <p>A city blending history and modernity, from royal landmarks to lively streets.</p>
+                </a>
+            </div>
+            <div class="destination-card">
+                <a href="sydney.html">
+                    <img src="public/img/destination_sidney.jpg" alt="Sydney, Australia">
+                    <h3>Sydney, Australia</h3>
+                    <p>Famous for its stunning harbor, beaches, and the iconic Opera House.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 StudentCulture. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.cta-btn').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default anchor behavior
+            document.querySelector('#discover-top-destinations').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
